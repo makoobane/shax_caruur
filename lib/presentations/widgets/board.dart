@@ -39,11 +39,11 @@ class Shaxboardwidget extends StatelessWidget {
           homeCubit: homeCubit,
         ),
         //this one shows score
-        ScoreShower(pos: totalSize.width / 3),
+        ScoreShower(size: totalSize),
         //those two buttons show which player is active and crucial for restarting the game
         if (state.currentPlayer == Player.red)
           Positioned(
-            top: totalSize.height / 20,
+            top: totalSize.height / 9,
             right: 0,
             child: IconButton(
               onPressed: () {

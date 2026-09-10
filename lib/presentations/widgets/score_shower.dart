@@ -3,15 +3,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shax_caruur/state_management/home_cubit.dart';
 
 class ScoreShower extends StatelessWidget {
-  final double pos;
-  const ScoreShower({super.key, required this.pos});
+  final Size size;
+  const ScoreShower({super.key, required this.size});
 
   @override
   Widget build(BuildContext context) {
     final HomeCubit homeCubit = BlocProvider.of<HomeCubit>(context);
     return Positioned(
-      left: pos,
-      top: 0,
+      left: size.width / 3,
+      top: size.height / 25,
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: RichText(

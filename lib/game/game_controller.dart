@@ -64,14 +64,14 @@ class GameController implements IController {
         pieceRadius: pieceRadius,
         coordinate: Offset(
           totalSize.width / 2 - 2 * pieceRadius,
-          totalSize.height / 10,
+          totalSize.height / 7,
         ),
         player: Player.red,
       ),
       Piece(
         pieceRadius: pieceRadius,
         id: 101,
-        coordinate: Offset(totalSize.width / 2, totalSize.height / 10),
+        coordinate: Offset(totalSize.width / 2, totalSize.height / 7),
         player: Player.red,
       ),
       Piece(
@@ -79,7 +79,7 @@ class GameController implements IController {
         id: 102,
         coordinate: Offset(
           totalSize.width / 2 + 2 * pieceRadius,
-          totalSize.height / 10,
+          totalSize.height / 7,
         ),
         player: Player.red,
       ), // this three for rock
